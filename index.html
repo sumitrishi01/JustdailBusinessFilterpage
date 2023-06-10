@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justdial - Local Search, Social, News, Videos, Shopping</title>
+        <link rel="icon" href="./fevicon.jpg">
+        <!-- CSS BS5 CDN Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- Offcanvas Area Start -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header border-bottom">
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title ms-5 ps-5 fw-bold me-auto" id="offcanvasRightLabel">MORE FILTERS</h5>
+            
+          </div>
+          <div class="offcanvas-body mx-2 overflow-y-hidden">
+            <span class="fw-semibold">Check-in</span>
+            <div class="d-flex my-2">
+              <a href="#" class="text-decoration-none text-dark btn btn-sm"><input type="date" class="border border-secondary-subtle p-2 rounded-2"></a>
+              <a href="#" class="text-decoration-none text-dark btn btn-sm"><input type="date" class="border border-secondary-subtle p-2 rounded-2"></a>
+            </div>
+            <p class="fw-semibold fs-6 m-0 p-0">Quick Filters</p>
+            <div class="my-2 s_bt" style="margin-left: 0px !important;">
+              <a href="#" class="btn btn-sm p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark me-1 ms-2"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_deals_3x.png" class="img-fluid mx-2" alt="logo" style="height: 18px; width: 18px;">Deals</a>
+              <a href="#" class="btn btn-sm p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark ms-1"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_toprates_3x.png" class="img-fluid mx-2" alt="logo" style="height: 18px; width: 18px;">Top Rated</a>
+            </div>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark me-1"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_jdverifies_3x.png" class="img-fluid mx-2" alt="logo" style="height: 15px; width: 15px;">JD Verified</a>
+              <a href="#" class="btn btn-sm p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark ms-1"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_responsive_3x.png" class="img-fluid mx-2" alt="logo" style="height: 18px; width: 18px;">Quick Response</a>
+            </div>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark me-1"><img src="https://akam.cdn.jdmagicbox.com/images/thumb/iphone/filter_freewifi_3x.png" class="img-fluid mx-2" alt="logo" style="height: 18px; width: 18px;">Free WiFi</a>
+              <a href="#" class="p-2 border border-secondary-subtle rounded-2 pe-3 text-decoration-none text-dark ms-1"><img src="https://akam.cdn.jdmagicbox.com/images/thumb/iphone/filter_trending_3x.png" class="img-fluid mx-2" alt="logo" style="height: 18px; width: 18px;">Trending</a>
+            </div>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Open Now</a>
+            </div>
+            <span class="my-2">Sort by</span>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Relevance</a>
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Rating</a>
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Popular</a>
+            </div>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Distance</a>
+              <a href="#" class="p-2 btn btn-sm px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Highest Price</a>
+            </div>
+            <div class="my-2 ms-2 s_bt">
+              <a href="#" class="btn btn-sm p-2 px-3 border border-secondary-subtle rounded-2 text-decoration-none text-dark me-1">Lowest Price</a>
+            </div>
+            
+          </div>
+          <div class="border border-top shadow-sm">
+            <div class="my-2 mx-4 mt-4 d-flex">
+              <a href="#" class="w-50 btn btn-sm p-2 px-3 border-0 rounded-2 text-decoration-none text-dark fw-semibold me-2 bg-secondary-subtle">Reset Filters</a>
+              <a href="#" class="w-50 btn btn-sm p-2 px-3 border-0 rounded-2 text-decoration-none text-dark fw-semibold ms-1 bg-secondary-subtle">Apply Filters</a>
+            </div>
+          </div>
+        </div>
+        <!-- Offcanvas Area End -->
+        <!-- Modal Section Start -->
+        <!-- Modal-2 Large Screen -->
+        <div class="modal s_modal" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4">
+                  <div class="modal-header mb-0 pb-0 border-0">
+                      <div class="row w-100 m-0">
+                          <div class="col-3 border-end my-auto py-1">
+                              <img class="img-fluid" src="./img/jdlogosvg.svg" width="90px" alt="pic">
+                          </div>
+                          <div class="col-8 lh-base">
+                              <h5 style="margin-top:20px; font-weight:900;" class="text-dark">Welcome</h5>
+                              <p class="text-dark-emphasis pt-1">Login for a seamless experience</p>
+                          </div>
+                          <div class="col-1 d-flex align-items-end mb-5 pb-1 pe-4">
+                              <button type="button" class="btn-close btn shadow-none btn-light px-3 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-body mb-0">
+                      <form class="bg-white p-2 mt-2 position-relative">
+                          <div class="border-bottom">
+                              <div class="row m-0">
+                                  <div class="col-2 p-0 mt-2 ps-3"><button class="btn fw-bold">+91</button></div>
+                                  <div class="col-10 p-0">
+                                      <input type="number" class="form-control shadow-none border-0 border-start my-2 rounded-0" placeholder="Mobile Number">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text-center mt-4">
+                              <button type="submit" class="btn text-white fw-bold bg-primary bg-opacity-50 py-2" style="width: 64%;">Login with OTP</button>
+                          </div>
+                          <div class="d-grid gap mt-5">
+                              <div class="s_line text-center">
+                                  <span class="my-3 fw-semibold text-body-tertiary pt-1 pb-1" style="font-size:11px;">
+                                      Maybe Later
+                                  </span>
+                              </div>
+                          </div>
+                      </form>
+                      <!-- <div class="text-center mb-2">
+                          <button type="button" class="btn btn-outline-light text-body-secondary rounded-pill px-4 border mx-2">
+                              <img class="img-fluid" src="https://dineshmehra86.github.io/13May2023-justDial/img/icons/google.svg" alt="logo">
+                              <span>Google</span>
+                          </button>
+                          <button type="button" class="btn btn-outline-light text-body-secondary rounded-pill px-4 border mx-2">
+                              <img src="https://dineshmehra86.github.io/13May2023-justDial/img/icons/fb.svg" alt="logo" class="img-fluid">
+                              <span class="">Facebook</span>
+                          </button>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Modal Section End -->
+
+        <div class="main_wrap">
+          <div class="container-fluid bg-white">
+            <!-- Header Section Start -->
+              <header class="bg-white sticky-top d-none d-lg-block d-xl-block">
+                <!-- Top head section start -->
+                <div class="row h-100">
+                    <div class="col-2 my-auto">
+                        <img class="img-fluid px-2" src="./img/jdlogosvg.svg" width="105px"/>
+                    </div>
+                    <div class="col-6 my-auto" style="margin-left: -4%;">
+                        <div class="row">
+                            <div class="col-4 px-0 mx-3 d-flex border border-1 border-dark-subtle rounded-1 shadow-sm bg-secondary-subtle">
+                                <button type="button" class="btn border-0 rounded-1 py-1">
+                                    <i class="fa-solid fa-location-dot" style="color: #898a8c;"></i>
+                                </button>
+                                <input type="search" class="form-control form-control-sm rounded-5 px-0 bg-secondary-subtle shadow-none border-0" placeholder="Search Loaction" id="exampleInput">  
+                            </div>
+                            <div class="col-7 p-0">
+                                <form>                            
+                                    <div class="d-flex bg-white border border-1 border-dark-subtle rounded-1 shadow-sm">                              
+                                        <input type="search" placeholder="Search for Spas & Salons" class="form-control form-control-sm border border-0 shadow-none px-2 rounded-5">
+                                        <button type="button" class="btn border-0 rounded-0 p-0">
+                                            <img class="img-fluid" src="./img/mic.svg"/>
+                                        </button>
+                                        <button type="button" class="btn btn-sm border-0 rounded-1 s_searchicon">
+                                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                                        </button>                                          
+                                    </div>                                                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navbar section start -->
+                    <div class="col-4 my-auto ms-4">
+                        <ul class="nav float-end">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-1 py-0 active text-dark" aria-current="page" href="#">
+                                    <img class="img-fluid" src="./img/nav_advertise_icon.svg" width="17px"/>
+                                    Advertise
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 position-relative">
+                                <a class="nav-link px-1 py-0 text-dark" href="#">
+                                    <img class="img-fluid" src="./img/nav_listing_icon.svg" width="17px"/>
+                                    Free Listing
+                                </a>
+                                <a href="#" class="s_busi">
+                                  BUSSINESS
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-0 py-0 text-dark" href="#" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                    <img class="img-fluid" src="./img/notify_icon.svg" width="23px"/>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a href="" class="nav-link text-dark px-1 py-0" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                    <img class="img-fluid p-0" src="./img/jd_login_icon.svg" width="27px"/>
+                                    Login / Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- navbar section end -->
+                </div>
+                <!-- Top head section end -->
+                <!-- Dropdown section start -->
+                <div class="row bg-white mb-0">
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:71px;margin:-8% 0 0 87%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                              JD Xperts
+                              <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-45%;width:600%;">
+                              <li>
+                                <div class="d-flex">
+                                    <div style="padding: 0 5% 0 1%;">
+                                        <h6 class="ps-3 fw-bold text-dark-emphasis" style="font-size:10px;">APELIANCES REPAIR</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-ac.svg"> Air Conditioner
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-tv.svg"> Television
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-refrigerator.svg"> Refrigerator
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-hmkitchen.svg"> Washing Machine
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-waterpurify.svg"> R0/Water Purifier
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-chimney.svg"> Chimney
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-microwave.svg"> Microwave
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-light-subtle border-start"></span>
+                                    <div style="padding: 0 5% 0 1%;">
+                                        <h6 class="ps-3" style="font-size:10px;">PEST CONTROL</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-coackroach.svg"> Cockroach & Ant
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-termite.svg"> Termites
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-bedbugs.svg"> Bedbugs
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-mosquitoes.svg"> Mosquitoes
+                                                </a>
+                                            </li>                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                              </li>                          
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:36px;margin:-8% 0 0 23%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                              B2B
+                              <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-80%;width:605%;">
+                                <div>
+                                    <li>
+                                        <a class="dropdown-item bg-white" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-allcat.svg"> All Categories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-healthmedical.svg"> Health Medical
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-electricaltools.svg"> Electrical Supplies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-industrial.svg"> Industrial Machinery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-apparel.svg"> Apparel & Fashion
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-carbikes.svg"> Automobile & Accessories
+                                        </a>
+                                    </li>                                
+                                </div>
+                            </ul>
+                        </div>
+                    </div>                     
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:80px;margin:-8% 0 0 -55%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                              Real Estate
+                              <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-40%;width:280%;">
+                                <div>
+                                    <li>
+                                        <a class="dropdown-item bg-white" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estatebuy.svg"> Buy Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estaterent.svg"> Rent Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estateproject.svg"> Sell Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_projects.svg"> Projects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estatepg.svg"> PG Accomodation
+                                        </a>
+                                    </li>                                                              
+                                </div>
+                            </ul>
+                        </div>
+                    </div>                     
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:130px;margin:-8% 0 0 -115%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                                Popular Categories
+                              <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-100%;width:340%;">
+                                <li>
+                                  <div class="d-flex">
+                                      <div style="padding: 0 8% 0 1%;">
+                                          <ul class="list-unstyled">
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Body Massage Centers
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Packers & Movers
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Car Hire
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Beauty Parlours
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Civil Contractors
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Security System
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Pathology Labs
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Interior Designer
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Furniture Repair Services
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Coaching
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <span class="border-light-subtle border-start"></span>
+                                      <div style="padding: 0 5% 0 1%;">
+                                          <ul class="list-unstyled">
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Vocational training
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Lawyers
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Hotels
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item pe-3" href="#">
+                                                      Computer Training Institutes
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      House Keeping Services
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Car Repairs & Services
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Transporters
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Photographers
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item" href="#">
+                                                      Hobbies
+                                                  </a>
+                                              </li>                                        
+                                              <li>
+                                                  <a class="dropdown-item text-primary" href="#">
+                                                      More...
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </div>                     
+                </div>
+                <!-- Dropdown section end -->
+              </header>
+            <!-- Header Section End -->
+                <!-- Main Section Start -->
+                <main class="s_main d-none d-lg-block">
+                  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./img/b2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/b3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/b4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/b5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Hotel Page Section Start -->
+                  <div class="row m-0">
+                    <div class="col p-0">
+                      <div class="d-flex my-3">
+                          <a href="#" class="text-decoration-none text-secondary-emphasis s_txt px-1"><span>Mumbai ></span></a>
+                          <a href="#" class="text-decoration-none text-secondary-emphasis s_txt px-1"><span>Accommodation Services in Mumbai > </span></a>
+                          <a href="#" class="text-decoration-none text-secondary-emphasis s_txt px-1"><span>Hotels in Mumbai > </span></a>
+                          <a href="#" class="text-decoration-none text-secondary-emphasis s_txt px-1"><span>10410+ Listings</span></a>
+                      </div>
+                      <h5 class="my-3">Hotels in Mumbai</h5>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-3 p-0">
+                      <div class="d-flex">
+                        <input type="date" class="me-2 border shadow-sm rounded-2 p-1" placeholder="" value="31-05-2023">
+                        <input type="date" class=" border shadow-sm rounded-2 p-1">
+                      </div>
+                    </div>
+                    <div class="col-8 p-0 s_btns overflow-x-hidden">
+                      <ul class="list-unstyled d-flex">
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto shadow-sm">
+                          <a href="#" class="text-secondary-emphasis">Sort by <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/filter-arrow-blk.svg" class="img-fluid" alt="Sort by" /></a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_toprated_3x.png" class="img-fluid mb-1" height="15" width="15" alt="" /> Top Rated</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_jdverified_3x.png" class="img-fluid" height="15" width="15" alt="JD Verified" /> JD Verified</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_jdtrust_3x.png" class="img-fluid" height="15" width="15" alt="" /> JD Trust</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/filter_responsive_3x.png" class="img-fluid" height="15" width="15" alt="" /> Quick Response</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/thumb/iphone/filter_freewifi_3x.png" class="img-fluid" height="15" width="15" alt="" /> Free WiFi</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/thumb/iphone/filter_trending_3x.png" class="img-fluid" height="15" width="15" alt="" /> Trending</a>
+                        </li>
+                        <li class="border border-1 p-1 m-2 rounded-2 my-auto  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis"><img src="https://akam.cdn.jdmagicbox.com/images/thumb/iphone/filter_trending_3x.png" class="img-fluid" height="15" width="15" alt="" /> Trending</a>
+                        </li>
+                        <li class="border border-1 p-1 rounded-2 my-auto shadow-sm">
+                          <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-1 p-0 s_btns">
+                      <ul class="list-unstyled d-flex mt-1">
+                        <li class="border border-1 p-1 m-1 rounded-2 my-auto border-dark  shadow-sm">
+                          <a href="#" class="text-secondary-emphasis" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/all_filters_icon.svg" class="img-fluid pe-1" alt="" />All Filters</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Hotel Page Section End -->
+                  <!-- Business Details Section Start -->
+                  <section>
+                    <div class="row m-0">
+                      <div class="col-lg-9">
+                        <div class="card mb-3">
+                          <div class="row g-0 s_card">
+                            <a href="#" class="col-md-4 p-3">
+                              <div class="s_image">
+                                <img src="./img/pic1.jpg" class="img-fluid rounded-top" alt="pic">
+                              </div>
+                              <div class="rounded-bottom" style="background-color: #506DD5;">
+                                <p class="text-center text-light text-semibold py-1"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/tag_popular.svg" class="img-fluid" alt="logo"> Popular</p>
+                              </div>
+                            </a>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Hotel Highway Touch <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                <div class="d-flex">
+                                  <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                    4.2
+                                  </p>
+                                  <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                  <i class="fa-solid fa-star text-warning mt-1"></i>
+                                  <i class="fa-solid fa-star text-warning mt-1"></i>
+                                  <i class="fa-solid fa-star text-warning mt-1"></i>
+                                  <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                  <span class="text-body-secondary ps-2 pt-1">334 Rating</span>
+                                  <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/verified_2x.gif" class="img-fluid mx-2" style="width: 60px; height: 30px;" alt="verify">
+                                </div>
+                                <div class="lh-1">
+                                  <p class="card-text">Thane Belapur Road Sanpada</p>
+                                  <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                  <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Loading Services</small></button>
+                                  <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid me-1" alt="logo"> "Very good service, good staff and also best rate in the chembur location. Room condition was also good."</small></p>
+                                </div>
+                                <div class="mt-4">
+                                  <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 07945847634</a>
+                                  <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                  <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 434 People recently enquired </small></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img src="./img/pic2.jpg" class="img-fluid rounded-top" alt="pic">
+                                </div>
+                                <div class="rounded-bottom" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/tag_responsive.svg" class="img-fluid" alt="logo"> Quick Response</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> King House <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2 pt-1">42 Rating</span>
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/trust_2x.gif" class="img-fluid mx-2" style="width: 60px; height: 30px;" alt="trust">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/verified_2x.gif" class="img-fluid" style="width: 60px; height: 30px;" alt="verify">
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Juhu Lane Andheri West</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Tours/Travel Desk</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Currency Exchange</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Tour Assistance</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Pets Not Allowed</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid me-1" alt="logo"> 'Hotel offers clean and hygienic environment and rooms. The rooms are tiny, everything arranged in a very compact manner. You won`t find any place to put your clothes, goo...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 m-0 p-3">
+                                <div class="s_image">
+                                  <img src="https://content.jdmagicbox.com/comp/mumbai/s1/022pxx22.xx22.220226154420.f3s1/catalogue/hotel-milona-airoli-sector-9-navi-mumbai-hotels-tplf3dl7dh-250.jpg?clr=#000066?w=828&q=75" class="img-fluid" style="width: 276px; height: 174px;" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/tag_responsive.svg" class="img-fluid" alt="logo"> Quick Response</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8 m-0">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Hotel Milona <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex m-0">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.1
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">9 Rating</span>
+                                  </div>
+                                  <div class="lh-1 m-0">
+                                    <p class="card-text">Road Opp.Diva Airoli Sector 9</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels (Rs 1001 To Rs 2000)</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'MiloNa service apartment which is located aroli sector 9 Navi Mumbai to good clean and hygiene and the stoppage to good polite and friendly with the customer since from 1...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="https://content.jdmagicbox.com/comp/malappuram/b7/9999px483.x483.200213213824.i5b7/catalogue/narmada-homestay-cherakkaparamba-malappuram-home-stay-vbxy1tn4mr.jpg?w=1920&q=75" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><i class="fa-solid fa-magnifying-glass text-warning"></i> Most searched</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Narmada Homestay <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">162 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Andheri East Sakinaka</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Guest House</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'Hotel New Shimla house is one of the best hotel have visited in Mumbai it is located in the sakinaka Mumbai the room sir too good clean and hygiene the staff to friendly ...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="./img/pic5.jpg" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/tag_responsive.svg" class="img-fluid" alt="logo"> Quick Response</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Tri Hotel <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">66 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">90 Feet DP Road Kandivali West</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Loading Services</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'Very nice rooms, good service' </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 512 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="https://content.jdmagicbox.com/comp/malappuram/b7/9999px483.x483.200213213824.i5b7/catalogue/narmada-homestay-cherakkaparamba-malappuram-home-stay-vbxy1tn4mr.jpg?w=1920&q=75" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><i class="fa-solid fa-magnifying-glass text-warning"></i> Most searched</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Narmada Homestay <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">162 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Andheri East Sakinaka</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Guest House</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'Hotel New Shimla house is one of the best hotel have visited in Mumbai it is located in the sakinaka Mumbai the room sir too good clean and hygiene the staff to friendly ...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Img -->
+                        <div class="rounded-2 mb-3" style="background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/search_results_snippet.png) !important; background-size: cover;">
+                           <div class="">
+                            <p class="py-3 fs-4 fw-bold ps-4 mb-0">Were our search results helpful?</p>
+                            <a href="#" class="btn btn-primary text-white m-0 ms-4 px-4 py-1 mb-3 fw-semibold me-3 rounded-1">Yes</a>
+                            <a href="#" class="btn btn-outline-primary text-primary bg-white mb-3 py-1 px-4 fw-semibold m-0 rounded-1 s_no">No</a>
+                           </div> 
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="./img/pic3.jpg" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><i class="fa-solid fa-magnifying-glass text-warning"></i> Most searched</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Hotel Regency <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">407 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Express Hoghway Mira Road East</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Lockers</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Smoking Zone</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Daily Housekeeping</small></button>
+                                    <p class="card-text d-none"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo">  </small></p>
+                                  </div>
+                                  <div class="mt-5">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="https://content.jdmagicbox.com/comp/malappuram/b7/9999px483.x483.200213213824.i5b7/catalogue/narmada-homestay-cherakkaparamba-malappuram-home-stay-vbxy1tn4mr.jpg?w=1920&q=75" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><i class="fa-solid fa-magnifying-glass text-warning"></i> Most searched</p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Narmada Homestay <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">162 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Andheri East Sakinaka</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Hotels</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Guest House</small></button>
+                                    <p class="card-text"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'Hotel New Shimla house is one of the best hotel have visited in Mumbai it is located in the sakinaka Mumbai the room sir too good clean and hygiene the staff to friendly ...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-4">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card -->
+                        <div>
+                          <div class="card mb-3">
+                            <div class="row g-0 s_card">
+                              <a href="#" class="col-md-4 p-3">
+                                <div class="s_image">
+                                  <img class="img-fluid" src="./img/pic4.jpg" class="img-fluid rounded-start" alt="pic">
+                                </div>
+                                <div class="" style="background-color: #506DD5;">
+                                  <p class="text-center text-light text-semibold py-1"><i class="fa-solid fa-magnifying-glass text-warning"></i> Regular Searched </p>
+                                </div>
+                              </a>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/new_thumb_icon.svg" class="img-fluid" alt="pic"> Hotel Derby <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/heart-component.svg" class="img-fluid float-end" alt="Dil"></a></h5>
+                                  <div class="d-flex">
+                                    <p class="bg-success text-center text-light fw-bold rounded-2" style="width: 30px;">
+                                      4.4
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2">1,081 Rating</span>
+                                  </div>
+                                  <div class="lh-1">
+                                    <p class="card-text">Ambemath Road Ulhasnagar No 3</p>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Bar</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Disabled Friendly</small></button>
+                                    <button type="button" class="btn btn-sm border rounded-pill p-0 px-1 btn-light mb-3"><small>Airport Transfer</small></button>
+                                    <p class="card-text d-none"><small class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/reviewcomment_icon.svg" class="img-fluid" alt="logo"> 'Hotel New Shimla house is one of the best hotel have visited in Mumbai it is located in the sakinaka Mumbai the room sir too good clean and hygiene the staff to friendly ...<a href="#" >more</a> </small></p>
+                                  </div>
+                                  <div class="mt-5">
+                                    <a href="#" class="btn btn-success me-2 px-4 p-1 btn-sm s_clbt"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/call_white_icon.svg" class="img-fluid" alt="call"> 6288236581</a>
+                                    <a href="#" class="btn btn-light btn-sm text-primary border border-primary px-3 p-1">Get Best Deal</a>
+                                    <span class="float-end" style="font-size: 12px;"><small><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/enquires_chart.svg" class="img-fluid" alt=""> 503 People recently enquired </small></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="border px-3 rounded-3 py-2 bg-light bg-opacity-75">
+                          <form>
+                            <p class="fs-5 fw-semibold">Are you looking for?<span class="d-block fs-6 fw-normal">Hotels</span></p>
+                            <div class="mb-3">
+                              <input type="text" class="form-control shadow-none" placeholder="Name*" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <input type="text" class="form-control shadow-none" placeholder="Mobile Number*" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                              <input type="email" class="form-control shadow-none" placeholder="Email ID ( Optional )" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary text-light w-100">Get Best Deal</button>
+                          </form>
+                        </div>
+                        <div class="border rounded-3 px-3 py-2 mt-3 s_hotel">
+                          <p class="fw-semibold m-1">Hotels</p>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-body-secondary">All Options</a></li>
+                            <li><a href="#" class="text-body-secondary">1 Star Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">2 Star Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">3 Star Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">4 Star Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">5 Star Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">Rs 500 & Below</a></li>
+                            <li><a href="#" class="text-body-secondary">Rs 501 & 1000</a></li>
+                            <li><a href="#" class="text-body-secondary">Rs 1001 & 2000</a></li>
+                            <li><a href="#" class="text-body-secondary">Rs 2001 & 3000</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="border rounded-3 px-3 py-2 mt-3 s_hotel">
+                          <p class="fw-semibold m-0 mb-2" style="font-size: 14px;">Most searched localities in Mumbai</p>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-body-secondary">Hotels in Mumbai</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Borivali West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Andheri West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Andheri East</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Malad West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Dadar West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Kandivali West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Crawford Market</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Bandra West</a></li>
+                            <li><a href="#" class="text-body-secondary">Hotels in Mulund West</a></li>
+                            <li><a href="#" class="fw-semibold">See More ></a></li>
+                          </ul>
+                        </div>
+
+                        <div class="border rounded-3 px-3 py-2 mt-3 s_hotel">
+                          <p class="fw-semibold m-0 mb-2" style="font-size: 14px;">Related categories in Mumbai</p>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-body-secondary">Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">Rooms On Rent</a></li>
+                            <li><a href="#" class="text-body-secondary">Couple Friendly Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">Apartment Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">Apartment Hotels (Rs 1001 To Rs 2000)</a></li>
+                            <li><a href="#" class="text-body-secondary">Apartment Hotels (Rs 2001 To Rs 3000)</a></li>
+                            <li><a href="#" class="text-body-secondary">Luxury Hotels </a></li>
+                            <li><a href="#" class="text-body-secondary">Couple Friendly Rooms On Rent</a></li>
+                            <li><a href="#" class="text-body-secondary">Capsule Hotels</a></li>
+                            <li><a href="#" class="text-body-secondary">Apartment Hotels (Rs 5001 & Above)</a></li>
+                            <li><a href="#" class="fw-semibold">See More ></a></li>
+                          </ul>
+                        </div>
+
+                        <div class="border rounded-3 px-3 py-2 mt-3 s_hotel">
+                          <p class="fw-semibold m-0 mb-2" style="font-size: 14px;">Popular B2B Categories Across India</p>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-body-secondary">49 Inches Android Televisions</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Android Tv</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Durdarshan</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches FHD Televisio</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches FHD Tv</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD 3D Durdarshan</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD 3D Televisions Set</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD 3D Televisions</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD 3D Tv</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Durdarshan</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD LED Durdarshan</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD LED Televisions</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD LED Televisions Set</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD LED Tv</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Smart Durdarshan</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Smart Televisions Set</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Smart Televisions</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Smart Tv</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Televisions Set</a></li>
+                            <li><a href="#" class="text-body-secondary">49 Inches Full HD Televisions</a></li>
+                            <li><a href="#" class="fw-semibold">See More ></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my-2 bg-white">
+                        <span class="float-end">
+                          <small class="text-body-secondary">Average Rating</small>
+                          <i class="fa-solid fa-star fa-xs text-warning"></i>
+                          <i class="fa-solid fa-star fa-xs text-warning"></i>
+                          <i class="fa-solid fa-star fa-xs text-warning"></i>
+                          <i class="fa-solid fa-star fa-xs text-warning"></i>
+                          <i class="fa-solid fa-star fa-xs"></i>
+                          <small class="text-body-secondary">4.0</small>
+                          <small class="text-body-secondary">(3271529 Rating & Reviews)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Business Details Section End -->
+                </main>
+            <!-- Main Section End -->
+            <!-- Footer Area Start -->
+          <footer class="bg-light bg-opacity-25 d-none d-lg-block d-xl-block">
+            <div class="mx-2 pt-4 footer_paragrap">
+              <p class="fw-semibold text-dark">Experience a Whole New Style of Living With the Help of Hotels in Mumbai</p>
+              <p class="p1 text-body-secondary">
+                People enjoy staying in hotels for a variety of reasons. Staying in a hotel allows one to escape their daily 
+                routine, allowing them to relax and disconnect from the hustle and bustle of city life. Another reason why 
+                people prefer hotels is the convenience they provide. Hotels provide a variety of amenities and services, 
+                such as room service, housekeeping, indoor restaurants, pools, gaming zones, gyms, and so on, making it 
+                convenient for guests to enjoy everything under one roof. Thus, hotels in  Mumbai  play a major role for 
+                locals as well as for those who are travelling from other cities or countries.
+              </p>
+              <p class="fw-semibold text-dark">Some Fun Facts About Hotels</p>
+              <p class="p1 text-body-secondary">
+                Hotels have a long history, with some of the earliest examples discovered in ancient Europe and Eastern Asia. 
+                These hotels were known to provide basic lodging for travellers. Hotels began to evolve into more sophisticated 
+                establishments during the Middle Ages. They were commonly found near pilgrimage or trade routes. Many monasteries 
+                and convents would provide lodging to travellers, and it was later discovered that some private homes had begun 
+                to accept visitors as well.
+              </p>
+              <p class="p1 text-body-secondary">
+                The hotel industry grew rapidly in the twentieth century. As a result, we saw the rise of chain hotels where you could 
+                find various amenities such as air conditioning, elevators, and in-room televisions, among other things. Today, 
+                the top hotels  come in a number of different forms, from budget motels to luxury resorts, and they cater to a wide range 
+                of travellers for both business and leisure purposes.
+              </p>
+              <p class="fw-semibold text-dark">What are the Types of Hotels?</p>
+              <p class="p1 text-body-secondary">
+                When you will conduct a search for hotels near me, you will find a plethora of options. It can be quite intimidating 
+                to select one hotel out of so many options. Below are some most common types of hotels: 
+                <br></br>
+                A chain hotel is one that is part of a larger group owned and managed by a single company. Each hotel in the chain 
+                usually operates under the same brand. For example, Oyo hotels fall under this type of hotel. You can easily find 
+                the same by conducting a search on Oyo hotels near me.
+              </p>
+              <p class="p1 text-body-secondary">
+                A bed and breakfast hotel, also known as a B&B hotel, is a type of lodging that is typically small. The term ‘bed’ in 
+                B&B hotels refers to overnight accommodations, which are typically fully furnished rooms with all of the basic amenities 
+                to spend the night comfortably. The term ‘breakfast’ refers to the complimentary breakfast that is usually included in 
+                the room rate. By conducting a search for ‘hotels near me for stay’ , you will find various options with B&B hotels included.
+              </p>
+              <p class="p1 text-body-secondary">
+                The ideal target audience of this type of hotel are travellers. Thus, you will often find these lodging located at the 
+                roadside of highways and other such routes. They also offer parking space, which is the main reason for the attraction 
+                of its guests. A motel will have a few guest rooms and basic amenities. These hotels are considered cheap, so when you 
+                search for ‘cheap hotels near me’ you will find various motels in your list of options.
+              </p>
+              <p class="p1 text-body-secondary">
+                A resort is a type of commercial establishment that provides a variety of services and amenities to guests with the primary 
+                goal of providing leisure and recreational activities. Restaurants, swimming pools, sports facilities, spas, and entertainment 
+                venues are common amenities at resorts. Resorts are located in appealing places such as beaches, mountains, or other scenic 
+                locations. Resorts can range in size depending on what type of resort they are in. Resorts are considered the best type of 
+                hotels, thus when you search for 'best hotels near me', you will come across many resorts in your list of options.
+              </p>
+              <p class="p1 text-body-secondary">
+                A guest house is a type of lodging establishment that provides accommodation in a private home. They usually have a more 
+                homely atmosphere than a hotel. Guest houses typically are run by a family or an owner and a small staff. They may offer 
+                shared spaces such as living rooms, kitchens, or outdoor areas, and may include breakfast or other meals. Guest houses 
+                can be found in a variety of locations, from urban neighbourhoods to rural areas.
+              </p>
+              <p class="p1 text-body-secondary">
+                Also known as a holiday home, this type of hotel is a vacation cottage or property, which is given on rent to guests for 
+                short-term stays. They are fully furnished houses that provide guests with a comfortable stay during the holidays.
+              </p>
+              <p class="p1 text-body-secondary">
+                Like motels, roadhouse hotels are situated beside a roadway to attract passing guests for overnight stays. They, too, 
+                offer all kinds of amenities and food services. When one is on a road trip, one may often come across a roadhouse.
+              </p>
+              <p class="p1 text-body-secondary">
+                These days, most of these hotels are couple friendly. However, if you wish to cross-check or specifically search for hotels 
+                that are couple-friendly, we advise our readers to conduct a search with keywords like ‘couple friendly hotels near me’ or 
+                ‘hotels near me for couples.’
+              </p>
+              <p class="fw-semibold text-dark">What are the Types of Rooms in Hotels?</p>
+              <p class="p1 text-body-secondary">
+                Each hotel will have a different type of hotel that best meets the needs of its guests. However, after doing some research, 
+                we have found the following rooms to be commonly found in almost every hotel.
+              </p>
+              <p class="p1 text-body-secondary">
+                Single Bed Room: Just like the name suggests, this room comes with a single bed meant for the use of a single person.
+              </p>
+              <p class="p1 text-body-secondary">
+                Double Bed Room: Like a single bedroom, this room comes with a double bed and is meant for accommodating two people at a time.
+              </p>
+              <p class="p1 text-body-secondary">
+                Queen and King-Sized Bed Room: These rooms are bigger in size in comparison to single and double bedrooms. This is because 
+                the bed provided to the guest comes in queen or king size, which requires quite some space.
+              </p>
+              <p class="p1 text-body-secondary">
+                Connecting Rooms: These rooms will at first look like regular rooms that have normal individual entrances. But on the inside, 
+                you will see that these rooms are connected through a passage or a door.
+              </p>
+              <p class="p1 text-body-secondary">
+                Suite: These rooms are considered luxurious rooms as they have a living room connected to one or more bedrooms. The bed and 
+                furniture used in these rooms are always of high quality.
+              </p>
+              <p class="p1 text-body-secondary">
+                To know more, we suggest our readers to look for 'hotels near me for stay' or 'best hotels near me.'
+              </p>
+              <p class="fw-semibold text-dark">What Does the ‘Star’ Rating Signify in Hotels?</p>
+              <p class="p1 text-body-secondary">
+                The 'star' rating system is a widely recognised system for indicating a hotel's quality and level of service. An independent 
+                organisation or government agency typically determines the rating by evaluating various aspects of the hotel, such as the 
+                quality of its rooms, amenities, service, cleanliness, and location.
+              </p>
+              <p class="p1 text-body-secondary">
+                In general, the number of stars awarded to a hotel relates to the level of luxury and amenities provided by them. 
+                The greater the number of stars, the greater will be the quality of service. A one-star hotel, for example, may only 
+                provide basic amenities, whereas a five-star hotel is likely to provide more luxurious amenities such as fine dining, 
+                spas, and extensive leisure facilities. People usually search for ‘3-star hotels near me’ when looking for a hotel 
+                within their budget yet with all the basic amenities. While some may look for  when looking for a hotel within their 
+                budget yet with all the basic amenities. While some may look for ‘5-star hotels near me’ to get luxurious amenities 
+                and the best services during their stay.
+              </p>
+              <p class="p1 text-body-secondary">
+                However, it is important to note that the rating system is not standardised across countries or regions, and different 
+                rating systems may use different criteria for every place. Furthermore, the star rating is not always an accurate 
+                indicator of a hotel's quality, as a hotel with a lower star rating can still provide excellent service and amenities.
+              </p>
+              <p class="fw-semibold text-dark">What Amenities can be Found in a Hotel?</p>
+              <p class="p1 text-body-secondary">
+                The amenities found in a hotel can vary depending on the hotel's star rating and type, however, we have done some research 
+                and found the following to be the most common amenities that guests can expect to find in most hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                A bed with clean blankets and pillows - available in all types of hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                A private bathroom with a shower or bathtub. They also provide fresh towels and toiletries. These are available in all types 
+                of hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                A television with cable or satellite connection to view various channels during your stay. This facility is available in 
+                3-star, 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                A telephone to call room service. This is available in 3-star, 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                A desk or table and a dressing table with a chair - available in 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                Free WiFi - available in all types of hotels. Some may not charge you for this service, while some hotels may charge 
+                on a data usage basis.
+              </p>
+              <p class="p1 text-body-secondary">
+                Choice of ordering room service or making use of the on-site dining facility - available in 3-star, 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                Parking space for guests is available in most hotels, but it is advised to check before you do a reservation.
+              </p>
+              <p class="p1 text-body-secondary">
+                Housekeeping services are available in all types of hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                24-hour front reception- Most of the hotels have a 24-hour front reception or a caretaker.
+              </p>
+              <p class="p1 text-body-secondary">
+                Gyms or fitness centres - available in 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                Swimming pools - available in 4-star and 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                Spa - available in 4-star or 5-star hotels.
+              </p>
+              <p class="p1 text-body-secondary">
+                To avail of any of these services and amenities or to simply take a break from your daily life, we urge readers 
+                to look for 'best hotels near me.' A comfortable stay in a hotel may just be the right solution to your current 
+                stressful life.
+              </p>
+              <p class="fw-semibold text-dark">What are the Charges for Booking a Hotel Room?</p>
+              <div class="d-flex">
+                <ul class="list-group rounded-0">
+                  <li class="list-group-item disabled p1 bg-light" aria-disabled="true">Type of Hotel (As per rating)</li>
+                  <li class="list-group-item disabled bg-light p1">3 Star Hotel</li>
+                  <li class="list-group-item disabled bg-light p1">4 Star Hotel</li>
+                  <li class="list-group-item disabled bg-light p1">5 Star Hotel</li>
+                </ul>
+                <ul class="list-group rounded-0">
+                  <li class="list-group-item disabled bg-light p1" aria-disabled="true">Approximate Cost (Per night)</li>
+                  <li class="list-group-item disabled bg-light p1">Rs. 1,500 to Rs. 3,000 onwards</li>
+                  <li class="list-group-item disabled bg-light p1">Rs. 3,000 to Rs. 7,000 onwards</li>
+                  <li class="list-group-item disabled bg-light p1">Rs. 10,000 to Rs. 20,000 onwards</li>
+                </ul>
+              </div>
+              <p class="p1 text-body-secondary mt-2">Please Note: The prices mentioned are indicative and subject to change.</p>
+              <p class="fw-semibold text-dark">Things to Keep in Mind When Booking your Hotel Stay</p>
+              <p class="p1 text-body-secondary">When booking a room in a hotel, there are several things to consider:</p>
+              <p class="p1 text-body-secondary">Location: Take into account the hotel's location and proximity to the places such as any tourist attractions or business venues that you wish to see.</p>
+              <p class="p1 text-body-secondary">
+                When booking a room at a hotel, you must always take into account their charges for per night. By comparing the budget 
+                and price of the room, you will come to know which hotel room suits best your needs and your pocket. You can search for 
+                ‘cheap hotels near me’ when trying to find a hotel that best suits your budget.
+              </p>
+              <p class="p1 text-body-secondary">Amenities: Because you are paying a fee to stay at a hotel, you should think about the 
+                amenities they provide. To name a few, always look for free Wi-Fi, breakfast, a gym or pool, and so on. You should select 
+                a hotel that is within your budget and has all of the amenities you require during your stay.
+              </p>
+              <p class="p1 text-body-secondary">
+                Reviews: To get a sense of the hotel's reputation and quality of services, read their online reviews from previous guests. 
+                This will help you understand if the hotel you are looking at is the best choice or not.
+              </p>
+              <p class="p1 text-body-secondary">
+                Room size and type: When you are looking for a hotel, also look at their types of rooms because this will help you understand 
+                which type of room is best suited for you and your needs. For example, if you are going on a trip with family or friends, 
+                you would want to book a room that is larger in size or connected to each other.
+              </p>
+              <p class="p1 text-body-secondary">
+                Policies: Check the hotel's policies, such as check-in and check-out timings, cancellation policies, and any additional fees, 
+                to avoid any surprises to your total bill at the end of your stay. For unmarried couples, it is always wise to check if a 
+                hotel is couple friendly. The best way to see which hotels are couple friendly is by conducting a search on ‘couple friendly 
+                hotels near me’ or ‘hotels near me for couples.’
+              </p>
+              <p class="fw-semibold text-dark m-0">Frequently Asked Questions</p>
+              <span class="fw-semibold">1. What is the check-in and check-out time in hotels?</span>
+              <p class="p1 text-body-secondary">Every hotel has its check-in and check-out timing. It is thus advised to speak with a hotel representative in advance to avoid any kind of inconvenience.</p>
+              <span class="fw-semibold">2. Is the parking space free of cost in hotels?</span>
+              <p class="p1 text-body-secondary">Most hotels provide free parking fees or have their charges included in the room rate. However, some hotels may charge you separately for the same. Thus, it is always advised to cross-check the same with the hotel of your choice.</p>
+              <span class="fw-semibold">3. Do hotels charge for Wi-Fi or internet access?</span>
+              <p class="p1 text-body-secondary">Usually, Wi-Fi or internet is given to guests free of cost or included in their room rate. However, we advise readers to always cross-check the same.</p>
+              <span class="fw-semibold">4. Are hotels pet friendly?</span>
+              <p class="p1 text-body-secondary">These days, many hotels are pet friendly but this may not be the case for all hotels. Thus, it is always wise to ask and confirm the same.</p>
+              <span class="fw-semibold">5. Are any documents required during check-in? </span>
+              <p class="p1 text-body-secondary">Yes, hotels will ask for government ID proof such as an Aadhar card during your check-in. For people who travel from abroad, their passport and Visa may be asked during check-in.</p>  
+            </div>
+            <hr>
+            
+            <footer class="">
+              <div class="footer_lg lh-sm px-4 mx-1 text-body-secondary pb-3">
+                <p class="fs-6 fw-semibold text-dark">Hotels in popular cities</p>
+                <a href="#" class="text-body-secondary">Hotels in Delhi </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Mumbai </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Bangalore </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Hyerabad </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Chennai </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Pune </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Ahmedabad </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Kolkata </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Jaipur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Chandigarh </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Coimbatore </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Lucknow </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Surat </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Indore </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Patna </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Nagpur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Ernakulam </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Bhopal </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Vadodara </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Ludhiana </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Kanpur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Nashik </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Varanasi </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Visakhapatnam </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Rajkot </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Raipur-Chhattisgarh </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Vijayawada </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Madurai </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Ranchi </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Goa </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Thiruvannthapuram </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Bhubaneshwar </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Allahabad </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Aurangabad-Maharashtra </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Dehradun </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Musore </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Trichy </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Guwahati </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Agra </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Kozhikode </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Jodhpur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Thrissur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Kolhapur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Salem </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Meerut </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Mangalore </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Gorakhpur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Jabalpur </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Jalandhar </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Hotels in Gwalior </a>
+              </div>
+            </footer>
+            <hr>
+            <div class="row m-0">
+              <div class="col-8">
+                  <div class="d-flex py-3 px-3 mt-3 s_social">
+                      <p class="fs-6 pe-2 text-dark mt-1 fw-semibold">Follow us on</p>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_facebook_active.svg" class="img-fluid px-1" alt="pic"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_youtube_active.svg" class="img-fluid px-1" alt="pic"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_insta_active.svg" class="img-fluid px-1" alt="pic"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_linkedIn_active.svg" class="img-fluid px-1" alt="pic"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_twitter_active.svg" class="img-fluid px-1" alt="pic"></a>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="d-flex s_store float-end mt-4">
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/getapp_googleplay.png" class="img-fluid px-1" alt="logo"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/getapp_appstore.png" class="img-fluid" alt="logo"></a>
+                  </div>
+              </div>
+            </div>
+            <hr>
+            <div class="px-4 footer_lg lh-1 my-3">
+              <p class="text-dark" style="font-size: 14px;">Explore JD Curated Collection</p>
+              <a href="#" class="text-body-secondary">Travel & Tourism </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Beauty </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Health & Fitness </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Food & Beverage </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Banking & Finance </a> <span>|</span>
+              <a href="#" class="text-body-secondary">On demand Services </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Home & Office </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Education & Jobs </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Real Estate </a> <span>|</span>
+              <a href="#" class="text-body-secondary">Shopping & Recreation </a>
+            </div>
+            <hr>
+            <!-- Main Footer Section Start -->
+            <footer class="d-none d-lg-block">
+              <div class="row" style="margin-left: 0.8%;">
+                  <div class="col-2 s_ft">
+                      <div>
+                          <p class="fs-6 fw-semibold">Quick Links</p>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">About us</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Investor Relations</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">We're hiring</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Customer Care</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Free Listing</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">What's New</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-2 s_ft mt-4 pt-3" style="margin-right: -50px !important;">
+                      <ul class="list-unstyled">
+                          <li class="py-1"><a href="#" class="text-body-secondary">Advertise</a></li>
+                          <li class="py-0"><a href="#" class="text-body-secondary">Media</a></li>
+                          <li class="py-1"><a href="#" class="text-body-secondary">Testimaniais</a></li>
+                          <li class="py-0"><a href="#" class="text-body-secondary">Feedback</a></li>
+                          <li class="py-1"><a href="#" class="text-body-secondary">Business Badge</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-2 s_ft" style="margin-right: -37px !important;">
+                      <div>
+                          <p class="fs-6 fw-semibold">Jd verticals</p>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Jdmart</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Bills & Recharge</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Car service</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1 s_ft mt-4 pt-3 mx-3">
+                      <div>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Book a Table</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">AC Repair</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Hospitals</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1 s_ft mt-4 pt-3 mx-3">
+                      <div>
+                          <ul class="list-unstyled px-2">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Real Estate</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Flights</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Jobs</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1 s_ft mt-4 pt-3 mx-2">
+                      <div>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Movies</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Bus</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Automobile</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1 s_ft mt-4 pt-3 mx-2">
+                      <div>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Entertainment</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Train</a></li>
+                              <li class="py-1"><a href="#" class="text-body-secondary">Jd Xperts</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1 s_ft mt-4 pt-3 mx-4">
+                      <div>
+                          <ul class="list-unstyled">
+                              <li class="py-1"><a href="#" class="text-body-secondary">Doctors</a></li>
+                              <li class="py-0"><a href="#" class="text-body-secondary">Hotel</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-1"></div>
+              </div>
+              <div class="ms-4 d-flex s_ft">
+                  <p class="s_para3 text-body-secondary mt-1">Copyrights 2008-23.  All Rights Reserved &nbsp;</p>
+                  <ul class="list-unstyled d-flex s_ft">
+                      <li><a href="#" class="text-body-secondary">Privacy </a><span>| &nbsp;</span> </li>
+                      <li><a href="#" class="text-body-secondary">Terms </a><span>| &nbsp;</span></li>
+                      <li><a href="#" class="text-body-secondary">infringement</a></li>
+                  </ul>
+              </div>
+          </footer>          
+          <!-- Main Footer Section End -->
+            
+          </footer>
+          <!-- Footer Area End -->
+          </div>
+          <!-- Mobile Screen Section Start -->
+          <div class="overflow-x-hidden" style="background-color: #E8E8E8;">
+              <!-- OffCanvas Section Start -->
+              <div class="offcanvas-lg offcanvas-bottom d-lg-none d-xl-none" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-body p-0">
+                  <div class="mt-2">
+                    <div>
+                      <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharefbicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Share on Facebook </span></a>
+                    </div>
+                    <div>
+                      <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharewhatsappicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Send on WhatApp</span></a>
+                    </div>
+                    <div>
+                      <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewshareicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Copy Link</span></a>
+                    </div>
+                    <div>
+                      <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharemoreicn.svg" class="img-fluid px-3 py-2" style="width: 60px; height: 60px;" alt="facebook"><span class="text-dark-emphasis fs-6">More Options</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OffCanvas Section End -->
+              <!-- Modal Section Start -->
+              <!-- Modal -->
+              <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0 p-0">
+                            <div class="float-start d-none">
+                                <button type="button" class="btn-close float-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="modal-body p-0">
+                            <div class="d-block">
+                                <button class="btn me-3 mt-3 rounded-5 text-white bg-dark bg-opacity-25 top-0 end-0 position-absolute" data-bs-dismiss="modal">Skip</button>
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/tjd_news.png" class="img-fluid w-100" alt="pic">
+                                <form class="bg-white p-5 rounded-5 rounded-bottom-0 position-relative" style="top:-18px;">
+                                    <div class="mb-3 text-center">
+                                      <h4>India's # 1 Local Search Engine</h4>
+                                    </div>
+                                    <div class="mb-3 border rounded">
+                                        <div class="row m-0">
+                                            <div class="col-2 p-0"><button class="btn fw-bold">+91</button></div>
+                                            <div class="col-10 p-0">
+                                                <input type="number" class="form-control shadow-none border-0" placeholder="Mobile Number">
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                    <button type="submit" class="btn text-white fw-bold bg-primary w-100 bg-opacity-50">Login with OTP</button>
+                                    <div class="py-3 text-center">
+                                        <span class="text-light-emphasis">----or continue with-----</span>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn bg-white text-dark fw-bold w-100 bg-opacity-75 border border-1"><i class="fa-solid fa-phone text-primary"></i> Truecaller</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Modal Section End -->
+              <!-- Header Section Start -->
+              <header class="d-lg-none d-xl-none bg-white">
+                <div class="row m-0 d-flex pt-3">
+                  <div class="col-5 m-0 ">
+                    <div class="d-flex">
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/nwtbakarw.svg" alt="LeftArrow" class="img-fluid s_logo"></a>
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/hpnwhdrlogoicn.svg" alt="JdLogo" class="img-fluid s_logo"></a>
+                    </div>
+                  </div>
+                  <div class="col-7 p-0 m-0 pe-4">
+                    <div class="float-end d-flex">
+                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/open-app-2023.svg" class="img-fluid px-2" alt="open App"></a>
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headernotifnicn.svg" alt="logo" class="img-fluid pe-2" style="margin-top: 2.3px;"></a>
+                      <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headershare.svg" alt="logo" class="img-fluid" style="margin-top: 2.3px;"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-0 bg-white">
+                  <div class="col-12">
+                    <form class="pt-0 pb-0 d-block d-lg-none bg-white">                            
+                      <div class="my-3 d-flex border border-dark border-1 rounded-3">                              
+                          <button class="btn pe-0">
+                              <img src="./img/srch.svg" alt="pic">
+                          </button>
+                          <input type="search" placeholder="Packers and Movers" class="form-control border border-0 shadow-none px-0">
+                          <button type="submit" class="btn px-2">
+                              <img src="./img/mic.svg" width="21px" alt="pic">
+                          </button>
+                      </div>                            
+                    </form>
+                  </div>
+                </div>
+              </header>
+              <!-- Header Section End -->
+              <!-- Mobile Screen Main Section Start -->
+              <main class="mt-5">
+                <section class="b_m1 bg-white d-lg-none d-xl-none">
+                    <div class="row m-0">
+                        <div class="col text-center p-0 pt-2 border">
+                            <div class="mt-1 b_text">
+                              <p class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/t_updownarrownew.svg" class="img-fluid" alt="sort by logo"> Sort By</p>
+                            </div>
+                        </div>
+                        <div class="col text-center p-0 pt-2 border">
+                            <div class="mt-1 b_text">
+                              <p class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/t_icnFilternew.svg" class="img-fluid" alt="filters logo"> Filters</p>
+                            </div>
+                        </div>
+                        <div class="col text-center p-0 pt-2 border">
+                            <div class="mt-1 b_text">
+                              <p class="text-body-secondary"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/t_newmapicon.svg" class="img-fluid" alt="map logo"> Map</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="b_m2 d-lg-none d-xl-none my-2 bg-white">
+                    <div class="row m-0">
+                        <div class="col p-0">
+                              <div class="m2img" style="background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/bg_blue.svg) !important;"\ >
+                                <p class="fw-semibold text-secondary-emphasis text-center pt-2">Get the list of Top 
+                                  <Span class="text-primary">Hotels</Span>
+                                  <span class="text-center text-body-secondary p-0 d-block" style="font-size: 12px;"><small>We'll send you contact details in seconds for free</small></span>
+                                </p>
+                                <center><a href="#" class="btn btn-primary fw-semibold mb-3 py-1" style="width: 35%;">Get Now</a></center>
+                              </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="b_m3 d-lg-none d-xl-none" style="background-color: #E8E8E8;">
+                    <div class="row m-0 bg-white s_cd my-2">
+                        <div class="col-12 p-0 p-2">
+                              <div class="row h-100">
+                                  <div class="col-5 px-0 ps-2 position-relative h-100">
+                                      <a href="#"><img src="https://content.jdmagicbox.com/comp/mumbai/w2/022pxx22.xx22.140811150652.t5w2/catalogue/hotel-crawford-inn-crawford-market-mumbai-3-star-hotels-llg4kmos46-250.jpg?clr=#412533" class="img-fluid ps-1 s_hotelimg w-100" alt="pic"></a>
+                                      <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/dtljdvrfd.svg" class="img-fluid position-absolute h-100 s_likebtn" style="width: 18px; height: 18px; right: 13px; bottom: -135px;" alt="like logo"></a>
+                                  </div>
+                                  <div class="col-7">
+                                    <a href="#" class="d-flex justify-content-between">
+                                      <span class="fw-semibold text-dark">Hotel Crawford Inn</span>
+                                      <span class="fw-bold s_p">P</span>
+                                    </a>
+                                    <span class="d-flex m-0 s_rate">
+                                      <span class="text-dark fw-bold" style="margin-top: 2.4px;">
+                                        4.3
+                                      </span>
+                                      <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                      <i class="fa-solid fa-star text-warning mt-1"></i>
+                                      <i class="fa-solid fa-star text-warning mt-1"></i>
+                                      <i class="fa-solid fa-star text-warning mt-1"></i>
+                                      <i class="fa-regular fa-star-half-stroke mt-1 text-warning"></i>
+                                      <span class="text-body-secondary ps-2" style="margin-top: 2.4px;">1945 Rating</span>
+                                    </span>
+                                    <p class="card-text p-0 m-0 py-1 text-body-secondary s_add fw-semibold">Dr. D N Road Crawford Market</p>
+                                    <span class="s_but">
+                                      <a href="#" class="btn btn-sm border rounded-1 p-0 px-1 btn-light"><small>3 Star</small></a>
+                                      <a href="#" class="btn btn-sm border rounded-1 p-0 px-2 btn-light bg-success bg-opacity-50 text-dark"><small>Popular</small></a>
+                                    </span>
+                                    <!-- <button>hello</button> -->
+                                    <div class="d-flex m-0 p-0 mt-5 s_callbtns">
+                                      <a href="#" class="btn btn-outline-primary bg-light text-primary pe-2 p-0"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/rscallicon.svg" class="img-fluid" alt="call_logo">Call Now</a>
+                                      <a href="#" class="btn btn-primary text-white mx-1 s_get">Get Best Deal</a>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!-- 2nd Card -->
+                    <div class="row m-0 bg-white s_cd my-2">
+                      <div class="col-12 p-0 p-2">
+                            <div class="row h-100">
+                                <div class="col-5 px-0 ps-2 position-relative h-100">
+                                    <a href="#"><img src="https://content.jdmagicbox.com/comp/mumbai/r9/022pxx22.xx22.211011094044.n9r9/catalogue/sainik-residency-vikhroli-east-mumbai-lodging-services-p6uu83x7xc-250.jpg" class="img-fluid ps-1 s_hotelimg w-100" alt="pic"></a>
+                                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/dtljdvrfd.svg" class="img-fluid position-absolute h-100 s_likebtn" style="width: 18px; height: 18px; right: 13px; bottom: -135px;" alt="like logo"></a>
+                                </div>
+                                <div class="col-7">
+                                  <a href="#" class="d-flex justify-content-between">
+                                    <span class="fw-semibold text-dark">Sainik Residency</span>
+                                    <!-- <span class="fw-bold s_p">P</span> -->
+                                  </a>
+                                  <span class="d-flex m-0 s_rate">
+                                    <span class="text-dark fw-bold" style="margin-top: 2.4px;">
+                                      4.3
+                                    </span>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke mt-1 text-warning"></i>
+                                    <span class="text-body-secondary ps-2" style="margin-top: 2.4px;">325 Rating</span>
+                                  </span>
+                                  <p class="card-text p-0 m-0 py-1 text-body-secondary s_add fw-semibold">Chaugle Chauke Airoli</p>
+                                  <span class="s_but d-flex">
+                                    <a href="#" class="btn btn-sm border rounded-1 p-0 px-1 btn-light"><small>3 YRS</small></a>
+                                    <a href="#" class="btn btn-sm border rounded-1 p-0 px-2 btn-light bg-success bg-opacity-50 text-dark ms-1"><small>Popular</small></a>
+                                  </span>
+                                  <!-- <button>hello</button> -->
+                                  <div class="d-flex m-0 p-0 mt-5 s_callbtns">
+                                    <a href="#" class="btn btn-outline-primary bg-light text-primary pe-2 p-0"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/rscallicon.svg" class="img-fluid" alt="call_logo">Call Now</a>
+                                    <a href="#" class="btn btn-primary text-white mx-1 s_get">Get Best Deal</a>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- 3rd Card -->
+                    <div class="row m-0 bg-white s_cd my-2">
+                      <div class="col-12 p-0 p-2">
+                            <div class="row h-100">
+                                <div class="col-5 px-0 ps-2 position-relative h-100">
+                                    <a href="#"><img src="https://content.jdmagicbox.com/comp/mumbai/h3/022pxx22.xx22.190430143908.v2h3/catalogue/hotel-meriton-andheri-east-mumbai-hotels-0tdbpbov4z-250.jpg" class="img-fluid ps-1 s_hotelimg w-100" alt="pic"></a>
+                                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/dtljdvrfd.svg" class="img-fluid position-absolute h-100 s_likebtn" style="width: 18px; height: 18px; right: 13px; bottom: -135px;" alt="like logo"></a>
+                                </div>
+                                <div class="col-7">
+                                  <a href="#" class="d-flex justify-content-between">
+                                    <span class="fw-semibold text-dark">Hotel Meriton</span>
+                                    <!-- <span class="fw-bold s_p">P</span> -->
+                                  </a>
+                                  <span class="d-flex m-0 s_rate">
+                                    <span class="text-dark fw-bold" style="margin-top: 2.4px;">
+                                      4.3
+                                    </span>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke mt-1 text-warning"></i>
+                                    <span class="text-body-secondary ps-2" style="margin-top: 2.4px;">540 Rating</span>
+                                  </span>
+                                  <p class="card-text p-0 m-0 py-1 text-body-secondary s_add fw-semibold">Sakinaka Andheri East</p>
+                                  <span class="s_but">
+                                    <a href="#" class="btn btn-sm border rounded-1 p-0 px-1 btn-light"><small>4 YRS</small></a>
+                                  </span>
+                                  <!-- <button>hello</button> -->
+                                  <div class="d-flex m-0 p-0 mt-5 s_callbtns" id="s_btt1">
+                                    <a href="#" class="btn btn-outline-primary bg-light text-primary pe-2 p-0"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/rscallicon.svg" class="img-fluid" alt="call_logo">Call Now</a>
+                                    <a href="#" class="btn btn-primary text-white mx-1 s_get">Get Best Deal</a>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- 4th -->
+                    <div class="row m-0 bg-white s_cd my-2">
+                      <div class="col-12 p-0 p-2">
+                            <div class="row h-100">
+                                <div class="col-5 px-0 ps-2 position-relative h-100">
+                                    <a href="#"><img src="https://content.jdmagicbox.com/comp/mumbai/z8/022pxx22.xx22.230206160316.i1z8/catalogue/the-fern-shelter-resort-palghar-city-palghar-hotels-m2peepzq92-250.jpg?clr=#392d2d" class="img-fluid ps-1 s_hotelimg w-100" alt="pic"></a>
+                                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/dtljdvrfd.svg" class="img-fluid position-absolute h-100 s_likebtn" style="width: 18px; height: 18px; right: 13px; bottom: -135px;" alt="like logo"></a>
+                                </div>
+                                <div class="col-7">
+                                  <a href="#" class="d-flex justify-content-between">
+                                    <span class="fw-semibold text-dark">The Fern Shelter Resort</span>
+                                  </a>
+                                  <span class="d-flex m-0 s_rate">
+                                    <span class="text-dark fw-bold" style="margin-top: 2.4px;">
+                                      5.0
+                                    </span>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <span class="text-body-secondary ps-2" style="margin-top: 2.4px;">1 Rating</span>
+                                  </span>
+                                  <p class="card-text p-0 m-0 pt-1 text-body-secondary s_add fw-semibold">Dhekale Varai</p>
+                                  <span class="s_but m-0 p-0">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/quick-response_3x.gif" class="img-fluid w-25" alt="pic">
+                                  </span>
+                                  <!-- <button>hello</button> -->
+                                  <div class="d-flex m-0 p-0 mt-5 s_callbtns">
+                                    <a href="#" class="btn btn-outline-primary bg-light text-primary pe-2 p-0"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/rscallicon.svg" class="img-fluid" alt="call_logo">Call Now</a>
+                                    <a href="#" class="btn btn-primary text-white mx-1 s_get">Get Best Deal</a>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- 5th -->
+                    <div class="row m-0 bg-white s_cd my-2">
+                      <div class="col-12 p-0 p-2">
+                            <div class="row h-100">
+                                <div class="col-5 px-0 ps-2 position-relative h-100">
+                                    <a href="#"><img src="https://content.jdmagicbox.com/comp/mumbai/u9/022pxx22.xx22.180317072100.z6u9/catalogue/hotel-abad-inn-colaba-mumbai-hotels-hor5e-250.jpg" class="img-fluid ps-1 s_hotelimg w-100" alt="pic"></a>
+                                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/dtljdvrfd.svg" class="img-fluid position-absolute h-100 s_likebtn" style="width: 18px; height: 18px; right: 13px; bottom: -135px;" alt="like logo"></a>
+                                </div>
+                                <div class="col-7">
+                                  <a href="#" class="d-flex justify-content-between">
+                                    <span class="fw-semibold text-dark">Hotel Abad Inn</span>
+                                  </a>
+                                  <span class="d-flex m-0 s_rate">
+                                    <span class="text-dark fw-bold" style="margin-top: 2.4px;">
+                                      4.3
+                                    </span>
+                                    <i class="fa-solid fa-star text-warning ps-2 mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-solid fa-star text-warning mt-1"></i>
+                                    <i class="fa-regular fa-star-half-stroke mt-1 text-warning"></i>
+                                    <span class="text-body-secondary ps-2" style="margin-top: 2.4px;">279 Rating</span>
+                                  </span>
+                                  <p class="card-text p-0 m-0 py-1 text-body-secondary s_add fw-semibold">Hartur Bandar Road Colaba</p>
+                                  <span class="s_but d-flex">
+                                    <a href="#" class="btn btn-sm border rounded-1 p-0 px-1 btn-light"><small>7 YRS</small></a>
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot/jdvrsl_verified.svg" class="img-fluid mx-2" alt="logo">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/quick-response_3x.gif" class="img-fluid w-25" alt="logo">
+                                  </span>
+                                  <!-- <button>hello</button> -->
+                                  <div class="d-flex m-0 p-0 mt-5 s_callbtns" id="s_btt">
+                                    <a href="#" class="btn btn-outline-primary bg-light text-primary pe-2 p-0"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/rscallicon.svg" class="img-fluid" alt="call_logo">Call Now</a>
+                                    <a href="#" class="btn btn-primary text-white mx-1 s_get">Get Best Deal</a>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <!-- Hotel in city section start -->
+                    <div class="row m-0 bg-white mt-2">
+                      <div class="col p-0 mx-2">
+                        <div class="d-flex my-1">
+                            <a href="#" class="text-decoration-none fw-semibold text-secondary-emphasis s_txt px-1"><span>Mumbai ></span></a>
+                            <a href="#" class="text-decoration-none fw-semibold text-secondary-emphasis s_txt px-1"><span>Packers And Movers in Mumbai > </span></a>
+                            <a href="#" class="text-decoration-none fw-semibold text-secondary-emphasis s_txt px-1"><span>6914+ Listings</span></a>
+                        </div>
+                    </div>
+                    <!-- Hotel in city section end -->
+                    <!-- Rating section start -->
+                    <div class="row m-0 bg-light">
+                      <div class="col p-0 py-2">
+                        <span class="fw-semibold s_pck">Packers And Movers in Mumbai</span>
+                        <div class="s_rating">
+                          <span class="text-body-secondary">Average Rating 4.3</span>
+                          <i class="fa-solid fa-star text-warning mt-1"></i>
+                          <i class="fa-solid fa-star text-warning mt-1"></i>
+                          <i class="fa-solid fa-star text-warning mt-1"></i>
+                          <i class="fa-solid fa-star text-warning mt-1"></i>
+                          <i class="fa-regular fa-star-half-stroke mt-1 text-warning"></i>
+                          <span class="text-body-secondary">(100603 Reviews & Rating)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Rating section end -->
+                    <!-- Questions Section Start -->
+                    <div class="row m-0 p-0 px-3">
+                      <div class="col p-0">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 py-3 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Latest Customer Reviews
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row my-1">
+                                <div class="col-1 p-0">
+                                  <a href="#">
+                                    <img src="https://content.jdmagicbox.com/mobile-t/icon/jdsocial/user1.png" class="img-fluid" alt="pic">
+                                  </a>
+                                </div>
+                                <div class="col-11">
+                                  <p class="p-0 m-0 fw-semibold text-body-tertiary">Hotel Divine</p>
+                                  <span class="">
+                                    <i class="fa-solid fa-star text-warning mt-2 fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                    <i class="fa-solid fa-star text-warning fa-xs"></i>
+                                  </span>
+                                  <p class="s_p1 text-body-tertiary">
+                                    I received excellent service from Bhagyashree, she was very nice in helping and serving us good food and drinks at the lounge. Nice view of Mumbai airport. I tried Martini with Lychee taste and it was awesome. We got pool view room which was nice.
+                                  </p>
+                                  <div class="d-flex p-0 m-0">
+                                    <p class="fw-semibold text-body-tertiary s_p2">- Abhi Najan</p>
+                                    <p class="float-end text-body-tertiary ms-auto me-4 s_p3">22 Feb</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Related categories in Mumbai
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse bg-light bg-opacity-25" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels</li>
+                                  <li><a href="#"></a>Rooms On Rent</li>
+                                  <li><a href="#"></a>Couple friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 1001 To Rs 2000)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 2001 To Rs 3000)</li>
+                                  <li><a href="#"></a>Luxury Hotels</li>
+                                  <li><a href="#"></a>Couple Friendly Rooms On Rent</li>
+                                  <li><a href="#"></a>Capsule Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 5001 & Above)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 3001 To Rs 4000)</li>
+                                  <li><a href="#"></a>Pet Friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 4001 To Rs 5000)</li>
+                                  <li><a href="#"></a>Beach Side Hotels</li>
+                                  <li><a href="#"></a>Hotels Near International Airport</li>
+                                  <li><a href="#"></a>Heritage Hotels</li>
+                                  <li><a href="#"></a>Early Check In Hotels</li>
+                                  <li><a href="#"></a>Motels</li>
+                                  <li><a href="#"></a>Eco Friendly Hotels</li>
+                                  <li><a href="#"></a>Business Hotels</li>
+                                  <li><a href="#"></a>Hotels Near Domestic Airport</li>
+                                  <li><a href="#"></a>Boutique Hotels</li>
+                                  <li><a href="#"></a>Independent Hotels</li>
+                                  <li><a href="#"></a>The Oberoi Group Of Hotels</li>
+                                  <li><a href="#"></a>Airport Transit Hotels</li>
+                                  <li><a href="#"></a>Radisson Group Of Hotels</li>
+                                  <li><a href="#"></a>Stay Vista</li>
+                                  <li><a href="#"></a>Apartment Hotels For Working Women</li>
+                                  <li><a href="#"></a>Hotels With Swimming Pool</li>
+                                  <li><a href="#"></a>Sun N Sand Hotels</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThr" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Most searched localities in Mumbai
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThr" class="accordion-collapse collapse bg-light bg-opacity-25" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                  <li><a href="#"></a>Hotels in Mumbai</li>
+                                </ul>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Popular categories in Mumbai
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels</li>
+                                  <li><a href="#"></a>Rooms On Rent</li>
+                                  <li><a href="#"></a>Couple friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 1001 To Rs 2000)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 2001 To Rs 3000)</li>
+                                  <li><a href="#"></a>Luxury Hotels</li>
+                                  <li><a href="#"></a>Couple Friendly Rooms On Rent</li>
+                                  <li><a href="#"></a>Capsule Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 5001 & Above)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 3001 To Rs 4000)</li>
+                                  <li><a href="#"></a>Pet Friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 4001 To Rs 5000)</li>
+                                  <li><a href="#"></a>Beach Side Hotels</li>
+                                  <li><a href="#"></a>Hotels Near International Airport</li>
+                                  <li><a href="#"></a>Heritage Hotels</li>
+                                  <li><a href="#"></a>Early Check In Hotels</li>
+                                  <li><a href="#"></a>Motels</li>
+                                  <li><a href="#"></a>Eco Friendly Hotels</li>
+                                  <li><a href="#"></a>Business Hotels</li>
+                                  <li><a href="#"></a>Hotels Near Domestic Airport</li>
+                                  <li><a href="#"></a>Boutique Hotels</li>
+                                  <li><a href="#"></a>Independent Hotels</li>
+                                  <li><a href="#"></a>The Oberoi Group Of Hotels</li>
+                                  <li><a href="#"></a>Airport Transit Hotels</li>
+                                  <li><a href="#"></a>Radisson Group Of Hotels</li>
+                                  <li><a href="#"></a>Stay Vista</li>
+                                  <li><a href="#"></a>Apartment Hotels For Working Women</li>
+                                  <li><a href="#"></a>Hotels With Swimming Pool</li>
+                                  <li><a href="#"></a>Sun N Sand Hotels</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Hotels in popular cities
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels</li>
+                                  <li><a href="#"></a>Rooms On Rent</li>
+                                  <li><a href="#"></a>Couple friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 1001 To Rs 2000)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 2001 To Rs 3000)</li>
+                                  <li><a href="#"></a>Luxury Hotels</li>
+                                  <li><a href="#"></a>Couple Friendly Rooms On Rent</li>
+                                  <li><a href="#"></a>Capsule Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 5001 & Above)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 3001 To Rs 4000)</li>
+                                  <li><a href="#"></a>Pet Friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 4001 To Rs 5000)</li>
+                                  <li><a href="#"></a>Beach Side Hotels</li>
+                                  <li><a href="#"></a>Hotels Near International Airport</li>
+                                  <li><a href="#"></a>Heritage Hotels</li>
+                                  <li><a href="#"></a>Early Check In Hotels</li>
+                                  <li><a href="#"></a>Motels</li>
+                                  <li><a href="#"></a>Eco Friendly Hotels</li>
+                                  <li><a href="#"></a>Business Hotels</li>
+                                  <li><a href="#"></a>Hotels Near Domestic Airport</li>
+                                  <li><a href="#"></a>Boutique Hotels</li>
+                                  <li><a href="#"></a>Independent Hotels</li>
+                                  <li><a href="#"></a>The Oberoi Group Of Hotels</li>
+                                  <li><a href="#"></a>Airport Transit Hotels</li>
+                                  <li><a href="#"></a>Radisson Group Of Hotels</li>
+                                  <li><a href="#"></a>Stay Vista</li>
+                                  <li><a href="#"></a>Apartment Hotels For Working Women</li>
+                                  <li><a href="#"></a>Hotels With Swimming Pool</li>
+                                  <li><a href="#"></a>Sun N Sand Hotels</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Popular B2B Categories Across India
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels</li>
+                                  <li><a href="#"></a>Rooms On Rent</li>
+                                  <li><a href="#"></a>Couple friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 1001 To Rs 2000)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 2001 To Rs 3000)</li>
+                                  <li><a href="#"></a>Luxury Hotels</li>
+                                  <li><a href="#"></a>Couple Friendly Rooms On Rent</li>
+                                  <li><a href="#"></a>Capsule Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 5001 & Above)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 3001 To Rs 4000)</li>
+                                  <li><a href="#"></a>Pet Friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 4001 To Rs 5000)</li>
+                                  <li><a href="#"></a>Beach Side Hotels</li>
+                                  <li><a href="#"></a>Hotels Near International Airport</li>
+                                  <li><a href="#"></a>Heritage Hotels</li>
+                                  <li><a href="#"></a>Early Check In Hotels</li>
+                                  <li><a href="#"></a>Motels</li>
+                                  <li><a href="#"></a>Eco Friendly Hotels</li>
+                                  <li><a href="#"></a>Business Hotels</li>
+                                  <li><a href="#"></a>Hotels Near Domestic Airport</li>
+                                  <li><a href="#"></a>Boutique Hotels</li>
+                                  <li><a href="#"></a>Independent Hotels</li>
+                                  <li><a href="#"></a>The Oberoi Group Of Hotels</li>
+                                  <li><a href="#"></a>Airport Transit Hotels</li>
+                                  <li><a href="#"></a>Radisson Group Of Hotels</li>
+                                  <li><a href="#"></a>Stay Vista</li>
+                                  <li><a href="#"></a>Apartment Hotels For Working Women</li>
+                                  <li><a href="#"></a>Hotels With Swimming Pool</li>
+                                  <li><a href="#"></a>Sun N Sand Hotels</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed px-0 text-body-secondary shadow-none s_acd" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Hotels in Mumbai
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="">
+                                <ul class="list-unstyled s_list">
+                                  <li><a href="#"></a>Hotels</li>
+                                  <li><a href="#"></a>Rooms On Rent</li>
+                                  <li><a href="#"></a>Couple friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 1001 To Rs 2000)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 2001 To Rs 3000)</li>
+                                  <li><a href="#"></a>Luxury Hotels</li>
+                                  <li><a href="#"></a>Couple Friendly Rooms On Rent</li>
+                                  <li><a href="#"></a>Capsule Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 5001 & Above)</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 3001 To Rs 4000)</li>
+                                  <li><a href="#"></a>Pet Friendly Hotels</li>
+                                  <li><a href="#"></a>Apartment Hotels (Rs 4001 To Rs 5000)</li>
+                                  <li><a href="#"></a>Beach Side Hotels</li>
+                                  <li><a href="#"></a>Hotels Near International Airport</li>
+                                  <li><a href="#"></a>Heritage Hotels</li>
+                                  <li><a href="#"></a>Early Check In Hotels</li>
+                                  <li><a href="#"></a>Motels</li>
+                                  <li><a href="#"></a>Eco Friendly Hotels</li>
+                                  <li><a href="#"></a>Business Hotels</li>
+                                  <li><a href="#"></a>Hotels Near Domestic Airport</li>
+                                  <li><a href="#"></a>Boutique Hotels</li>
+                                  <li><a href="#"></a>Independent Hotels</li>
+                                  <li><a href="#"></a>The Oberoi Group Of Hotels</li>
+                                  <li><a href="#"></a>Airport Transit Hotels</li>
+                                  <li><a href="#"></a>Radisson Group Of Hotels</li>
+                                  <li><a href="#"></a>Stay Vista</li>
+                                  <li><a href="#"></a>Apartment Hotels For Working Women</li>
+                                  <li><a href="#"></a>Hotels With Swimming Pool</li>
+                                  <li><a href="#"></a>Sun N Sand Hotels</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Questions Section End -->
+                </section>
+              </main>
+              <!-- Mobile Screen Main Section End -->
+          </div>
+          <!-- Mobile Screen Section End -->
+        </div>
+        <!-- JS BS5 CDN Links -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

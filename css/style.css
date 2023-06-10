@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E8E8E8;
+    font-family: 'Poppins', sans-serif;;
+}
+/* Header section start */
+header{height: 60px;}
+header ul li a{
+    font-size: 15px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header ul li a:hover{
+    background-color: #f2efef !important;
+    border-radius: 5px;
+}
+.dropicon:hover{             
+    box-shadow: -0px -3px 0px 0px rgb(50, 152, 192) inset;
+}
+.dropicon:hover .downicon{
+    display: block;
+    box-shadow: 0px 0.5px 4px 1px rgb(215, 215, 215);
+}
+.dropicon .dropdown-item:hover{background-color: none !important;}
+            
+.dropicon li a{
+    font-size: 13px !important;
+    color: rgb(96, 95, 95);    
+}
+.s_drop1 li{padding: 3px 0;}
+.s_searchicon{
+    height: 27px; 
+    width: 32px; 
+    padding: 5px 0px !important;
+    margin:1%;
+    background-color:#FF6C00 !important;
+}
+.s_busi{
+    background-color: #ec4f4f;
+    padding: 1px 5px;
+    justify-content: center;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    font-size: 8px !important;
+    color: white;
+    font-weight: 600;
+}
+.s_busi:hover{
+    background-color: #ec4f4f !important;
+    border-radius: 0px;
+}
+/* Header section end */
+.s_tbdr{border: 1px dashed green;}
+.s_main{margin-top: 48px !important;}
+.s_menu{font-family: Calibri;}
+.s_menu > li a:hover, .s_submenu > li:hover{
+    background-color: #EDEDED;
+    cursor: pointer;
+    border-radius:3px;
+}
+.s_menu > li:hover ul{display: block;/*Show */}
+a{text-decoration: none;}
+.s_submenu{
+    width: 100px;
+    height:100px;
+    background-color: white;
+    display: none;/*Hide*/
+}
+.s_btns > ul li a{
+    font-size: 12px;
+    font-weight: 600px;
+}
+/* Offcanvas Area */
+.s_bt:hover a:hover{background-color: rgb(238, 237, 237) !important;}
+/* Offcanvas Area */
+/* Modal Area Start */
+.s_modal{backdrop-filter: blur(15px);}
+/* Modal Area End */
+/* Card Section Start */
+.s_image{
+    height: 174px;
+    width: 100%;
+    overflow: hidden;
+}
+.s_card:hover a img{
+    transform: scale(1.03);
+    overflow: hidden;
+    transition: 0.8s linear;
+}
+
+
+/* Card Section End */
+.s_submenu a{color: black;}
+.s_submenu a:hover{color: #1274C0;}
+.s_txt{
+    font-size: 11px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.s_txt:hover span{color: blue;}
+.s_hotel > ul li a{font-size: 13px;}
+.s_hotel a:hover{
+    text-decoration: underline;
+    color: #1274C0 !important;
+}
+.card:hover{
+    box-shadow: 0px 2px 0.1px 1px #f0eeee;
+    transition: 0.3s;
+}
+.s_no:hover{background-color: rgb(238, 237, 237) !important;}
+.s_clbt{background-color: #339D3A;}
+.s_clbt:hover{
+    background-color: #28bb32;
+    transition: 0.6s;
+}
+/* Footer Section Start */
+.footer_lg > a{font-size: 11px;}
+.footer_lg a:hover{
+    text-decoration: underline;
+    color: #1274C0 !important;
+}
+.footer_lg > span{font-size: 11px !important;}
+.p1{
+    font-size: 11px;
+    line-height: 17px;
+}
+.footer_paragrap span{font-size: 13px;}
+.s_store img{
+    height: 29px;
+    width: 100%;
+}
+.s_social:hover a img:hover {opacity: 0.6;}
+.s_ft ul li a{font-size: 11px !important;}
+.s_para3{font-size: 11px;}
+.s_ft span{font-size: 11px;}
+#s_anchor:hover p, .s_ft a:hover{
+    color: #0f7dd8 !important;
+    text-decoration: underline;
+}
+/* Footer Section End */
+
+/* Mobile Screen CSS Start */
+.b_text{
+    font-size: 13px;
+    font-weight: bold;
+}
+.m2img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.s_get{
+    text-align: center;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.s_rating{font-size: 8px;}
+.s_pck{font-size: 11px;}
+.s_acd{
+    font-size: 12px;
+    font-weight: bold;
+}
+.s_p1{
+    font-size: 11px;
+    font-weight: 600;
+}
+.s_p2{font-size: 13px;}
+.s_p3{font-size: 12px;}
+.s_acd:hover{background-color: white !important;}
+.s_list li{
+    font-size: 13px;
+    line-height: 38px;
+    color: #007aff;
+    font-weight: 500;
+}
+/* Mobile Screen CSS End */
+
+@media all and (max-width:1024px){
+    .s_btns > ul li a{font-size: 7px !important;}
+    
+}
+@media all and (max-width:991px) {
+    .navbar{display: none;}
+    .s_callbtns a{width: 50%;}
+    .s_callbtns{margin-top: 162px !important;}
+    .s_p{
+        font-size: 15px;
+        color: gainsboro;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-fluid, .container-fluid-lg, .container-fluid-md, .container-fluid-sm, .container-fluid-xl {max-width: 1290px;}
+}
+
+@media all and (min-width:992px) {
+    .logo{display: none;}
+}
+@media all and (max-width:600px) {
+    .s_callbtns a{
+        width: 90 !important;
+        font-size: 10px;
+        padding: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+    .s_logo{width: 110% !important;}
+    .s_rate, .s_add{font-size: 11px !important;}
+    .s_but a{font-size: 10px !important;}
+    .s_p{
+        font-size: 10px;
+        color: gainsboro;
+    }
+    .s_cd{height: 178px;}
+    .s_hotelimg{height: 162px;}
+    .s_likebtn{
+        top: 45px !important;
+        right: 7px !important;
+    }
+    .s_likebtn{top: 63px !important;}
+    .s_callbtns{margin-top: 40px !important;}
+}
+@media all and (max-width:320px) {
+    .s_callbtns{margin-top: 24px !important;}
+    #s_btt{margin-top: 47px !important;}
+    #s_btt1{margin-top: 42px !important;}
+}
